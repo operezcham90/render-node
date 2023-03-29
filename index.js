@@ -3,7 +3,7 @@ const http = require('http')
 const fs = require('fs')
 
 // constante del puerto
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 // creacion del servidor
 const servidor = http.createServer(responder)
